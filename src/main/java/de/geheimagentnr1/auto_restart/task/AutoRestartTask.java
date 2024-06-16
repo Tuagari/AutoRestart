@@ -91,9 +91,9 @@ public class AutoRestartTask extends TimerTask {
 					if( difference.getSeconds() == warning_time.getSeconds() ) {
 						server.getPlayerList().broadcastSystemMessage(
 							Component.literal( String.format(
-								"Restarting in %s...",
+								"\n  ꐱ &fСервер будет перезагружен через &a%s &fсекунд!\n &f",
 								warning_time.getDisplayString()
-							) ).setStyle( Style.EMPTY.withColor( ChatFormatting.YELLOW ) ),
+							) ),
 							false
 						);
 					}
